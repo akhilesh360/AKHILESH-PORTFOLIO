@@ -12,7 +12,7 @@ const skillsData = [
     },
     {
         category: "AI & Machine Learning",
-        skills: ["Generative AI", "LLM Integration", "Agentic AI", "RAG", "Python"]
+        skills: ["Cursor AI", "Claude (Anthropic)", "OpenAI APIs (GPT-4)", "GitHub Copilot", "Generative AI", "LLM Integration", "Agentic AI", "RAG", "Prompt Engineering"]
     },
     {
         category: "Enterprise Platforms",

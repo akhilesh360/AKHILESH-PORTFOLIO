@@ -99,7 +99,7 @@ const Hero = () => {
           <div className="hero-greeting-wrapper">
             <p className="hero-greeting">Hi There! 👋🏻</p>
             <div className="hero-image-wrapper-inline">
-              <img src="/profile.jpg" alt="Sai Akhilesh" className="hero-profile-img" onError={(e) => { e.target.style.display = 'none'; e.target.parentElement.style.display = 'none'; }} />
+              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Sai Akhilesh" className="hero-profile-img" onError={(e) => { e.target.style.display = 'none'; e.target.parentElement.style.display = 'none'; }} />
             </div>
           </div>
           <h1 className="hero-title">

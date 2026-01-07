@@ -4,11 +4,34 @@ import './Experience.css';
 
 const experienceData = [
     {
+        company: "Amazon (A2Z Sync)",
+        role: "Data Engineer",
+        location: "Seattle, WA",
+        period: "Dec 2025 – Present",
+        logo: `${import.meta.env.BASE_URL}amazon.png`,
+        summary: "Building enterprise-scale data infrastructure for A2Z Sync, leveraging Apache NiFi, Airflow, Python, and SQL to orchestrate complex data ingestion and synchronization workflows across distributed automotive dealership systems.",
+        highlights: [
+            "Designed and implemented enterprise-scale data ingestion pipelines using Apache NiFi to integrate multiple automotive dealership management systems (DMS) and third-party vendor platforms.",
+            "Built and maintained NiFi dataflows to ingest, route, transform, and enrich dealership data including vehicle inventory, pricing, financing, customer leads, and service records.",
+            "Integrated heterogeneous dealership systems such as Dealertrack, DIS, and OEM partner feeds using REST APIs, SFTP ingestion, and event-driven flows.",
+            "Implemented reusable NiFi templates, parameter contexts, and environment-specific configurations to support multi-tenant dealer onboarding.",
+            "Designed schema validation, error handling, replay mechanisms, and dead-letter queues using NiFi provenance and back-pressure tuning.",
+            "Secured data movement using TLS encryption, credential providers, and token-based authentication across AWS S3 and downstream analytics systems.",
+            "Optimized NiFi performance through load balancing and processor scheduling, reducing end-to-end data latency by 30%.",
+            "Implemented CI/CD pipelines using Jenkins and AWS CodePipeline for automated deployment of NiFi flows and Python-based data processing modules.",
+            "Built comprehensive monitoring and alerting for NiFi pipelines using CloudWatch and custom Python scripts to detect ingestion failures and throughput bottlenecks.",
+            "Orchestrated complex multi-stage workflows using Apache Airflow alongside NiFi, ensuring SLA compliance and automated retry mechanisms.",
+            "Optimized SQL queries and database schemas in PostgreSQL and Redshift for dealership analytics, improving query performance by 50%.",
+            "Leveraged AI-powered development tools including Cursor, Claude, and OpenAI APIs to accelerate code development, automate documentation, and enhance code quality through intelligent pair programming.",
+            "Collaborated with product, integration, and dealership teams to translate business workflows into scalable ingestion architectures."
+        ]
+    },
+    {
         company: "Bank of America",
         role: "Data Engineer",
         location: "Plano, TX",
-        period: "Jul 2023 – Present",
-        logo: "/bofa.png",
+        period: "Jul 2023 – Dec 2025",
+        logo: `${import.meta.env.BASE_URL}bofa.png`,
         summary: "Engineered real-time Spark pipelines and data models supporting financial risk and compliance systems, improving data availability, and reducing latency by 30%.",
         highlights: [
             "Designed scalable ETL pipelines in Apache Spark/Python, integrating multiple upstream systems into a centralized Hadoop-based data lake.",
@@ -22,7 +45,7 @@ const experienceData = [
         role: "Data Engineer",
         location: "Irving, TX",
         period: "Dec 2020 – Aug 2022",
-        logo: "/cvs.png",
+        logo: `${import.meta.env.BASE_URL}cvs.png`,
         summary: "Developed HIPAA-compliant pipelines processing 1M+ claims per day, cutting processing time by 40% and automating key validation checks.",
         highlights: [
             "Developed high-throughput data ingestion pipelines using Azure Data Factory and Databricks (PySpark) for patient claims analytics.",
@@ -36,7 +59,7 @@ const experienceData = [
         role: "Data Engineer",
         location: "Bentonville, AR",
         period: "Jun 2019 – Dec 2020",
-        logo: "/walmart.png",
+        logo: `${import.meta.env.BASE_URL}walmart.png`,
         summary: "Built cloud-native retail data pipelines using Hadoop, Airflow, and BigQuery, enabling real-time supply chain analytics across millions of transactions.",
         highlights: [
             "Engineered cloud-native data pipelines in Databricks to process large-scale customer behavior and transaction data.",
